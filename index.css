@@ -1,0 +1,64 @@
+body {
+  background-color: #262626;
+  margin: 0;
+}
+
+.player {
+  width: 370px;
+  margin: 0 auto;
+}
+
+.timeline {
+  display: flex;
+  margin: 5px 0;
+}
+
+.timeline__item {
+  background-color: #717171;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.timeline__item+.timeline__item {
+  margin-left: 4px;
+}
+
+.timeline__item-inner {
+  width: 0;
+  height: inherit;
+  background-color: #fff;
+  border-radius: inherit;
+}
+
+.player__content {
+  position: relative;
+}
+
+.player__content img {
+  width: 100%;
+}
+
+.player__item {
+  display: none;
+}
+
+.player__item-active {
+  display: block;
+}
+
+.player__content-switcher {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+}
+
+.player__content-prev {
+  top: 0;
+  left: 0;
+}
+
+.player__content-next {
+  top: 0;
+  right: 0;
+}
